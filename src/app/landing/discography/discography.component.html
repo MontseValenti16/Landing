@@ -1,0 +1,11 @@
+<div class="discography-container">
+  <h1>DISCOGRAFÍA Y ÁLBUMES</h1>
+
+  <div class="album-grid">
+    <div *ngFor="let album of albums" class="album-item">
+      <img [src]="'albums/' + album.image" alt="{{ album.title }}" class="album-image">
+      <h3>{{ album.title }}</h3>
+      <p>Año: {{ album.year }}</p>
+    </div>
+  </div>
+</div>
